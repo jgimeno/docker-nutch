@@ -5,6 +5,9 @@ MAINTAINER Jonathan Gimeno <jgimeno@gmail.com>
 # Set last version
 ENV NUTCH_VERSION 1.10
 
+# Set java env Variable
+ENV JAVA_HOME /usr
+
 # Download nutch
 RUN wget -q http://apache.rediris.es/nutch/$NUTCH_VERSION/apache-nutch-$NUTCH_VERSION-bin.zip
 
