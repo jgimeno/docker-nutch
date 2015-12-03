@@ -21,5 +21,8 @@ RUN mv apache-nutch-$NUTCH_VERSION/ /nutch
 # Data volume for nutch
 VOLUME ["/data"]
 
+# set workdir to nutch folder
+WORKDIR /nutch
+
 # Nutch server port.
 EXPOSE 8899
